@@ -1,4 +1,13 @@
 package br.com.senai.entidade_cliente.cliente;
 
-public record DadosListagemCliente() {
+public record DadosListagemCliente(
+        Long id,
+        String nome,
+        String email,
+        String telefone
+) {
+    public  DadosListagemCliente(Cliente cliente){
+        this(cliente.getId(), cliente.getNome(), cliente.getEmail(), cliente.getTelefone());
+    }
+
 }
