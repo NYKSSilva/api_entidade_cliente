@@ -1,6 +1,6 @@
-package br.com.senai.entidade_cliente.controller;
+package br.com.senai.api_ecommerce.controller;
 
-import br.com.senai.entidade_cliente.cliente.*;
+import br.com.senai.api_ecommerce.cliente.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +18,7 @@ public class ClienteController {
     @Autowired
     private ClienteRepository repository;
 
+    //dto(Data Transfer Object)= intermediario que filtra as informações para a segurança do codigo/banco de dados/servidor
     @PostMapping
     @Transactional
     public void cadastrarCliente(@RequestBody @Valid DadosCadastroCliente dados){

@@ -1,4 +1,4 @@
-package br.com.senai.entidade_cliente.cliente;
+package br.com.senai.api_ecommerce.cliente;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
